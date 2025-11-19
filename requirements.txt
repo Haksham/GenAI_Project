@@ -1,0 +1,1 @@
+# npm install axios react-dropzone xlsx multer next-connect tailwindcss postcss autoprefixer openai
