@@ -85,7 +85,36 @@ export default function Home() {
         gap: "1.5rem",
       }}
     >
-      <h1 style={{ fontSize: "1.8rem", fontWeight: 600 }}>Excel Chatbot</h1>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          flexWrap: "wrap",
+          gap: "1rem",
+        }}
+      >
+        <h1 style={{ fontSize: "1.8rem", fontWeight: 600 }}>Excel Chatbot</h1>
+        <a
+          href="https://docs.google.com/spreadsheets/d/1_svHLUQj1mcf7VW7BpCkH3KPJ82q4AGK/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            padding: "0.5rem 1rem",
+            backgroundColor: "#0070f3",
+            color: "white",
+            borderRadius: "0.375rem",
+            textDecoration: "none",
+            fontSize: "0.875rem",
+            fontWeight: 500,
+            transition: "background-color 0.2s",
+          }}
+          onMouseEnter={(e) => (e.target.style.backgroundColor = "#0051cc")}
+          onMouseLeave={(e) => (e.target.style.backgroundColor = "#0070f3")}
+        >
+          📊 Sample Dataset
+        </a>
+      </div>
       <FileUpload onDataLoaded={handleDataLoaded} />
       <ChatBox
         messages={messages}
